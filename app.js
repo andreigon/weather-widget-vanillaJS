@@ -13,11 +13,7 @@ $(document).ready(function(){
 function getWeatherByCitycity(city){
     $.get(
         "https://api.openweathermap.org/data/2.5/weather",
-        // "https://api.openweathermap.org/data/2.5/weather?id=524901&lang=ru&appid=",
-        
-            
          {   
-        
             "q" : city,
             "appid" : "37edcf594a6e459972546a21bc7c2566"
         },
@@ -42,14 +38,6 @@ function getWeatherByCitycity(city){
             document.getElementById('humidity').innerHTML=humidOFcity
             document.getElementById('weatherIcon').src= Icon
         },
-
-        // function getDataMain(data.main){
-        //     console.log(data.main)
-        // },
-        
-        // function(getCity){
-        //     document.getElementById('city')=(data.name)
-        // }
     );
 }
 
@@ -59,29 +47,6 @@ function changeLocation(){
         getWeatherByCitycity(city)
         console.log(city)
     }
-// console.log(response.json)
-console.log("ANANSA")
-// function change_City(){
-
-// }
-
-
-// console.log(city)
-// console.log(locations)
-// alert(data.name)
-
-//  function get_City(){
-
-//     document.getElementById('city')=(data.name)
-// }
-
-
-
-// locations.onclick= function() {
-//     console.log("KKK")
-// };
-
-
 
 
 
